@@ -26,7 +26,7 @@ public:
     stack<int> st;
     st.push(-1);
     vector<int> ans(n);
-    for(int i=0; i<n-1;i++){
+    for(int i=0; i<n;i++){
        // jab tak ek chota elem nhi milta tab tak pop karte jao
         int curr=arr[i];
         while(st.top()!=-1 && arr[st.top()]>=curr){
